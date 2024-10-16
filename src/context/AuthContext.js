@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
 
     // If localStorage is empty, initialize with a default user
     if (!storedUsers || storedUsers.length === 0) {
-      const defaultUser = [{ email: 'dummyuser@gmail.com', password: '123456' }];
+      const defaultUser = [{ email: 'admin@gisurvey.com', password: '123456' }];
       localStorage.setItem('users', JSON.stringify(defaultUser)); // Set default user in localStorage
       return defaultUser;
     }
